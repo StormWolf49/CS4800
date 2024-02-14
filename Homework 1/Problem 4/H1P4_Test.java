@@ -1,4 +1,4 @@
-public class Test {
+public class H1P4_Test {
     public static void main(String[] args) {
         Folder demo = new Folder("php_demo1");
         demo.newFolder("Source Files");

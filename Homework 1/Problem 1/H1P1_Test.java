@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Test {
+public class H1P1_Test {
     public static void main(String[] args) {
         ArrayList<Employee> employees = new ArrayList<Employee>();
         employees.add(new SalariedEmployee("Joe", "Jones", "111-11-1111", 2500));

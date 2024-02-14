@@ -1,4 +1,4 @@
-public class Test {
+public class H1P2_Test {
     public static void main(String[] args) {
         Ship[] ships = new Ship[3];
         ships[0] = new Ship("Ship1", "1998");

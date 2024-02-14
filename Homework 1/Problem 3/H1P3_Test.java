@@ -1,4 +1,4 @@
-public class Test {
+public class H1P3_Test {
     public static void main(String[] args) {
         Instructor ND = new Instructor("Nima", "Davarpanah", "3-2636");
         Textbook CC = new Textbook("Clean Code", "Robert C. Martin", "Pearson");
