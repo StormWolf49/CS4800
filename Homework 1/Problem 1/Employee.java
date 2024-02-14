@@ -32,4 +32,8 @@ public class Employee {
     public void setSSN(String SSN) {
         this.SSN = SSN;
     }
+
+    public String toString() {
+        return firstName + " " + lastName + ": " + SSN;
+    }
 }

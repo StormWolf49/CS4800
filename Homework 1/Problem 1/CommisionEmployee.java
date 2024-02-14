@@ -23,4 +23,9 @@ public class CommisionEmployee extends Employee {
     public void setGrossSales(double grossSales) {
         this.grossSales = grossSales;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " (" + commissionRate + "% & $" + grossSales + ")";
+    }
 }

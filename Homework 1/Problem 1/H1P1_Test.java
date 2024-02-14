@@ -10,5 +10,8 @@ public class H1P1_Test {
         employees.add(new SalariedEmployee("Renwa", "Chanel", "555-55-5555", 1700));
         employees.add(new BaseEmployee("Mike", "Davenport", "666-66-6666", 95000));
         employees.add(new CommisionEmployee("Mahnaz", "Vaziri", "777-77-7777", 22, 40000));
+        for (int i = 0; i < employees.size(); i++) {
+            System.out.println(employees.get(i));
+        }
     }
 }
