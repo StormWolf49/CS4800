@@ -1,0 +1,89 @@
+@startuml
+object "<u>titanic:Ship</u>" as ts{
+    shipName = "Titanic"
+    yearBuilt = "March31st,1909"
+}
+object "<u>mvgemini:CruiseShip</u>" as gs{
+    shipName = "MVGemini"
+    yearBuilt = "May30th,1991"
+    maxNumberPassengers = 100
+}
+object "<u>evergiven:CargoShip</u>" as evs{
+    shipName = "EverGiven"
+    yearBuilt = "September25th,2018"
+    cargoCapacityInTonnage = 220940
+}
+@enduml
+
+@startuml
+object "<u>c1Instructor:Instructor</u>" as i1{
+    firstName = "Nima"
+    lastName = "Davarpanah"
+    officeNumber = "3-2636"
+}
+object "<u>c1Textbook:Textbook</u>" as t1{
+    author = "Robert Cecil Martin"
+    publisher = "Pearson"
+    title = "CleanCode:A Handbook of Agile Software Craftmanship"
+}
+object "<u>c1:Course</u>" as c1{
+    instructor = c1Instructor
+    textbook = c1Textbook
+}
+c1 *-- i1
+c1 *-- t1
+@enduml
+
+@startuml
+object "<u>phpDemo1:Folder</u>" as f1{
+    name = "php_demo1"
+    subfolders = ArrayList<Folder>
+}
+object "<u>Source Files:Folder</u>" as f2{
+    name = "Source Files"
+    subfolders = ArrayList<Folder>
+}
+object "<u>Include Path:Folder</u>" as f3{
+    name = "Include Path"
+    subfolders = ArrayList<Folder>
+}
+object "<u>Remote Files:Folder</u>" as f4{
+    name = "Remote Files"
+    subfolders = ArrayList<Folder>
+}
+f1 *-- f2
+f1 *-- f3
+f1 *-- f4
+object "<u>.phalcon:Folder</u>" as f5{
+    name = ".phalcon"
+    subfolders = ArrayList<Folder>
+}
+object "<u>app:Folder</u>" as f6{
+    name = "app"
+    subfolders = ArrayList<Folder>
+}
+object "<u>cache:Folder</u>" as f7{
+    name = "cache"
+    subfolders = ArrayList<Folder>
+}
+object "<u>public:Folder</u>" as f8{
+    name = "public"
+    subfolders = ArrayList<Folder>
+}
+f2 *-- f5
+f2 *-- f6
+f2 *-- f7
+f2 *-- f8
+object "<u>.htaccess:File</u>" as f9{
+    name = ".htaccess"
+}
+object "<u>.htrouter.php:File/u>" as f10{
+    name = "models"
+}
+object "<u>index.html:File</u>" as f11{
+    name = "index.html"
+}
+f8 *-- f9
+f8 *-- f10
+f8 *-- f11
+@enduml
