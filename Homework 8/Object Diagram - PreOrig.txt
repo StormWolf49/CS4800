@@ -1,0 +1,224 @@
+@startuml
+object "<u>testDocument:Document</u>" as doc{
+  characters = charList
+  propertiesFactory = propFac
+}
+object "<u>propFac:propertiesFactory</u>" as propfac{
+}
+object "<u>H:Character</u>" as hc{
+  character = 'H'
+  characterProperty = HProps
+}
+object "<u>HProps:CharacterProperties</u>" as hp{
+  font = "Arial"
+  color = "Black"
+  size = 16
+}
+object "<u>e:Character</u>" as ec{
+  character = 'e'
+  characterProperty = eProps
+}
+object "<u>eProps:CharacterProperties</u>" as ep{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>l:Character</u>" as lc1{
+  character = 'l'
+  characterProperty = lProps
+}
+object "<u>lProps:CharacterProperties</u>" as lp1{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>l:Character</u>" as lc2{
+  character = 'l'
+  characterProperty = lProps
+}
+object "<u>lProps:CharacterProperties</u>" as lp2{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>o:Character</u>" as oc1{
+  character = 'o'
+  characterProperty = oProps
+}
+object "<u>oProps:CharacterProperties</u>" as op1{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>W:Character</u>" as wc{
+  character = 'W'
+  characterProperty = eProps
+}
+object "<u>WProps:CharacterProperties</u>" as wp{
+  font = "Arial"
+  color = "Black"
+  size = 16
+}
+object "<u>o:Character</u>" as oc2{
+  character = 'o'
+  characterProperty = oProps
+}
+object "<u>oProps:CharacterProperties</u>" as op2{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>r:Character</u>" as rc{
+  character = 'r'
+  characterProperty = rProps
+}
+object "<u>rProps:CharacterProperties</u>" as rp{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>l:Character</u>" as lc3{
+  character = 'l'
+  characterProperty = lProps
+}
+object "<u>lProps:CharacterProperties</u>" as lp3{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>d:Character</u>" as dc{
+  character = 'd'
+  characterProperty = dProps
+}
+object "<u>dProps:CharacterProperties</u>" as dp{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>C:Character</u>" as cc{
+  character = 'C'
+  characterProperty = CProps
+}
+object "<u>CProps:CharacterProperties</u>" as cp{
+  font = "Verdana"
+  color = "Blue"
+  size = 18
+}
+object "<u>S:Character</u>" as sc{
+  character = 'S'
+  characterProperty = SProps
+}
+object "<u>SProps:CharacterProperties</u>" as sp{
+  font = "Verdana"
+  color = "Blue"
+  size = 18
+}
+object "<u>5:Character</u>" as 5c{
+  character = '5'
+  characterProperty = 5Props
+}
+object "<u>5Props:CharacterProperties</u>" as 5p{
+  font = "Verdana"
+  color = "Red"
+  size = 12
+}
+object "<u>8:Character</u>" as 8c{
+  character = '8'
+  characterProperty = 8Props
+}
+object "<u>8Props:CharacterProperties</u>" as 8p{
+  font = "Verdana"
+  color = "Red"
+  size = 12
+}
+object "<u>0:Character</u>" as 0c1{
+  character = '0'
+  characterProperty = 0Props
+}
+object "<u>0Props:CharacterProperties</u>" as 0p1{
+  font = "Verdana"
+  color = "Red"
+  size = 12
+}
+object "<u>0:Character</u>" as 0c2{
+  character = '5'
+  characterProperty = CProps
+}
+object "<u>0Props:CharacterProperties</u>" as 0p2{
+  font = "Verdana"
+  color = "Red"
+  size = 12
+}
+
+left to right direction
+
+hc *-- hp
+ec *-- ep
+lc1 *-- lp1
+lc2 *-- lp2
+oc1 *-- op1
+wc *-- wp
+oc2 *-- op2
+rc *-- rp
+lc3 *-- lp3
+dc *-- dp
+cc *-- cp
+sc *-- sp
+5c *-- 5p
+8c *-- 8p
+0c1 *-- 0p1
+0c2 *-- 0p2
+
+doc *-- propfac 
+
+doc *-- hc
+doc *-- ec
+doc *-- lc1
+doc *-- lc2
+doc *-- oc1
+doc *-- wc
+doc *-- oc2
+doc *-- rc
+doc *-- lc3
+doc *-- dc
+doc *-- cc
+doc *-- sc
+doc *-- 5c
+doc *-- 8c
+doc *-- 0c1
+doc *-- 0c2
+
+doc *-- hp 
+doc *-- ep
+doc *-- lp1
+doc *-- lp2
+doc *-- op1
+doc *-- wp
+doc *-- op2
+doc *-- rp
+doc *-- lp3
+doc *-- dp
+doc *-- cp
+doc *-- sp
+doc *-- 5p
+doc *-- 8p
+doc *-- 0p1
+doc *-- 0p2
+
+propfac *-- hp 
+propfac *-- ep
+propfac *-- lp1
+propfac *-- lp2
+propfac *-- op1
+propfac *-- wp
+propfac *-- op2
+propfac *-- rp
+propfac *-- lp3
+propfac *-- dp
+propfac *-- cp
+propfac *-- sp
+propfac *-- 5p
+propfac *-- 8p
+propfac *-- 0p1
+propfac *-- 0p2
+@enduml

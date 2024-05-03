@@ -44,20 +44,3 @@ Document *-- CharacterProperties
 CharacterPropertiesFactory *-- CharacterProperties
 Driver --> Document
 @enduml
-
-@startuml
-object "<u>H:Character</u>" as hc{
-  
-    yearBuilt = "March31st,1909"
-}
-object "<u>mvgemini:CruiseShip</u>" as gs{
-    shipName = "MVGemini"
-    yearBuilt = "May30th,1991"
-    maxNumberPassengers = 100
-}
-object "<u>evergiven:CargoShip</u>" as evs{
-    shipName = "EverGiven"
-    yearBuilt = "September25th,2018"
-    cargoCapacityInTonnage = 220940
-}
-@enduml

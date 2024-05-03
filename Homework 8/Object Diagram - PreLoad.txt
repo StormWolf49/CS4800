@@ -1,0 +1,224 @@
+@startuml
+object "<u>readDocumentVerify:Document</u>" as doc1{
+  characters = charList
+  propertiesFactory = propFac
+}
+object "<u>propFac:propertiesFactory</u>" as propfac1{
+}
+object "<u>H:Character</u>" as hc1{
+  character = 'H'
+  characterProperty = HProps
+}
+object "<u>HProps:CharacterProperties</u>" as hp1{
+  font = "Arial"
+  color = "Black"
+  size = 16
+}
+object "<u>e:Character</u>" as ec1{
+  character = 'e'
+  characterProperty = eProps
+}
+object "<u>eProps:CharacterProperties</u>" as ep1{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>l:Character</u>" as lc11{
+  character = 'l'
+  characterProperty = lProps
+}
+object "<u>lProps:CharacterProperties</u>" as lp11{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>l:Character</u>" as lc21{
+  character = 'l'
+  characterProperty = lProps
+}
+object "<u>lProps:CharacterProperties</u>" as lp21{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>o:Character</u>" as oc11{
+  character = 'o'
+  characterProperty = oProps
+}
+object "<u>oProps:CharacterProperties</u>" as op11{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>W:Character</u>" as wc1{
+  character = 'W'
+  characterProperty = eProps
+}
+object "<u>WProps:CharacterProperties</u>" as wp1{
+  font = "Arial"
+  color = "Black"
+  size = 16
+}
+object "<u>o:Character</u>" as oc21{
+  character = 'o'
+  characterProperty = oProps
+}
+object "<u>oProps:CharacterProperties</u>" as op21{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>r:Character</u>" as rc1{
+  character = 'r'
+  characterProperty = rProps
+}
+object "<u>rProps:CharacterProperties</u>" as rp1{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>l:Character</u>" as lc31{
+  character = 'l'
+  characterProperty = lProps
+}
+object "<u>lProps:CharacterProperties</u>" as lp31{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>d:Character</u>" as dc1{
+  character = 'd'
+  characterProperty = dProps
+}
+object "<u>dProps:CharacterProperties</u>" as dp1{
+  font = "Arial"
+  color = "Black"
+  size = 14
+}
+object "<u>C:Character</u>" as cc1{
+  character = 'C'
+  characterProperty = CProps
+}
+object "<u>CProps:CharacterProperties</u>" as cp1{
+  font = "Verdana"
+  color = "Blue"
+  size = 18
+}
+object "<u>S:Character</u>" as sc1{
+  character = 'S'
+  characterProperty = SProps
+}
+object "<u>SProps:CharacterProperties</u>" as sp1{
+  font = "Verdana"
+  color = "Blue"
+  size = 18
+}
+object "<u>5:Character</u>" as 5c1{
+  character = '5'
+  characterProperty = 5Props
+}
+object "<u>5Props:CharacterProperties</u>" as 5p1{
+  font = "Verdana"
+  color = "Red"
+  size = 12
+}
+object "<u>8:Character</u>" as 8c1{
+  character = '8'
+  characterProperty = 8Props
+}
+object "<u>8Props:CharacterProperties</u>" as 8p1{
+  font = "Verdana"
+  color = "Red"
+  size = 12
+}
+object "<u>0:Character</u>" as 0c11{
+  character = '0'
+  characterProperty = 0Props
+}
+object "<u>0Props:CharacterProperties</u>" as 0p11{
+  font = "Verdana"
+  color = "Red"
+  size = 12
+}
+object "<u>0:Character</u>" as 0c21{
+  character = '5'
+  characterProperty = CProps
+}
+object "<u>0Props:CharacterProperties</u>" as 0p21{
+  font = "Verdana"
+  color = "Red"
+  size = 12
+}
+
+left to right direction
+
+hc1 *-- hp1
+ec1 *-- ep1
+lc11 *-- lp11
+lc21 *-- lp21
+oc11 *-- op11
+wc1 *-- wp1
+oc21 *-- op21
+rc1 *-- rp1
+lc31 *-- lp31
+dc1 *-- dp1
+cc1 *-- cp1
+sc1 *-- sp1
+5c1 *-- 5p1
+8c1 *-- 8p1
+0c11 *-- 0p11
+0c21 *-- 0p21
+
+doc1 *-- propfac1
+
+doc1 *-- hc1
+doc1 *-- ec1
+doc1 *-- lc11
+doc1 *-- lc21
+doc1 *-- oc11
+doc1 *-- wc1
+doc1 *-- oc21
+doc1 *-- rc1
+doc1 *-- lc31
+doc1 *-- dc1
+doc1 *-- cc1
+doc1 *-- sc1
+doc1 *-- 5c1
+doc1 *-- 8c1
+doc1 *-- 0c11
+doc1 *-- 0c21
+
+doc1 *-- hp1
+doc1 *-- ep1
+doc1 *-- lp11
+doc1 *-- lp21
+doc1 *-- op11
+doc1 *-- wp1
+doc1 *-- op21
+doc1 *-- rp1
+doc1 *-- lp31
+doc1 *-- dp1
+doc1 *-- cp1
+doc1 *-- sp1
+doc1 *-- 5p1
+doc1 *-- 8p1
+doc1 *-- 0p11
+doc1 *-- 0p21
+
+propfac1 *-- hp1
+propfac1 *-- ep1
+propfac1 *-- lp11
+propfac1 *-- lp21
+propfac1 *-- op11
+propfac1 *-- wp1
+propfac1 *-- op21
+propfac1 *-- rp1
+propfac1 *-- lp31
+propfac1 *-- dp1
+propfac1 *-- cp1
+propfac1 *-- sp1
+propfac1 *-- 5p1
+propfac1 *-- 8p1
+propfac1 *-- 0p11
+propfac1 *-- 0p21
+@enduml
