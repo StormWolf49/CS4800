@@ -1,0 +1,63 @@
+@startuml
+class Character {
+  -char character
+  -CharacterProperties characterProperty
+  +void setCharacter(char character)
+  +void setCharacterProperty(CharacterProperties characterProperty)
+  +char getCharacter()
+  +String getFont()
+  +String getColor()
+  +int getSize()
+}
+
+class CharacterProperties {
+  -final String font
+  -final String color
+  -final int size
+  +String getFont()
+  +String getColor()
+  +int getSize()
+}
+
+class CharacterPropertiesFactory {
+  -final Map<String, CharacterProperties> flyweights
+  +int sizeOfMap
+}
+
+class Document {
+  -final List<Character> characters
+  -final CharacterPropertiesFactory CharacterPropertiesFactory
+  +void addCharacter(char c, String font, String color, int size)
+  +void editCharacterProperties(int index, String font, String color, int size)
+  +void saveToFile(String filename)
+  +void loadFromFile(String filename)
+}
+
+class Driver {
+  +{static} void main(String[] args)
+}
+
+Character *-- CharacterProperties
+Document *-- CharacterPropertiesFactory
+Document *-- Character
+Document *-- CharacterProperties
+CharacterPropertiesFactory *-- CharacterProperties
+Driver --> Document
+@enduml
+
+@startuml
+object "<u>H:Document</u>" as hc{
+  
+    yearBuilt = "March31st,1909"
+}
+object "<u>mvgemini:CruiseShip</u>" as gs{
+    shipName = "MVGemini"
+    yearBuilt = "May30th,1991"
+    maxNumberPassengers = 100
+}
+object "<u>evergiven:CargoShip</u>" as evs{
+    shipName = "EverGiven"
+    yearBuilt = "September25th,2018"
+    cargoCapacityInTonnage = 220940
+}
+@enduml
