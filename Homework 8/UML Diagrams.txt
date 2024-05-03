@@ -46,7 +46,7 @@ Driver --> Document
 @enduml
 
 @startuml
-object "<u>H:Document</u>" as hc{
+object "<u>H:Character</u>" as hc{
   
     yearBuilt = "March31st,1909"
 }
